@@ -58,7 +58,7 @@ const Header = ({ activeHeading }) => {
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
-              <img src={logo} alt="" />
+              <img src={logo} width={150} alt="" />
             </Link>
           </div>
           {/* search box */}

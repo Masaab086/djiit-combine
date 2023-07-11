@@ -224,13 +224,13 @@ export const categoriesData = [
     image_Url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBQPQMVNRd6TtDkGs2dCri0Y-rxKkFOiEWw&usqp=CAU",
   },
-  {
-    id: 6,
-    title: "Medical and Healthcare Supplies",
-    subTitle: "",
-    image_Url:
-      "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
-  },
+  // {
+  //   id: 6,
+  //   title: "Medical and Healthcare Supplies",
+  //   subTitle: "",
+  //   image_Url:
+  //     "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
+  // },
   {
     id: 7,
     title: "Building and Construction Materials",
@@ -687,4 +687,8 @@ export const footerSupportLinks = [
   {
     name: "Live chat",
   },
+];
+
+export const heroSlider = [
+  "https://icms-image.slatic.net/images/ims-web/e3f9171b-1419-4d67-b4bf-2e57fd91cd85.jpg",
 ];

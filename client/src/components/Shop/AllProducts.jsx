@@ -53,6 +53,30 @@ const AllProducts = () => {
       flex: 0.6,
     },
     {
+      field: "isApproved",
+      headerName: "Approval",
+      type: "number",
+      minWidth: 130,
+      flex: 0.6,
+      renderCell: (params) => {
+        let isApproved = params.getValue(params.id, "isApproved");
+        let isDeclined = params.getValue(params.id, "isDeclined");
+
+        return (
+          <div>
+            {isApproved && !isDeclined && (
+              <span className="text-green-700"> Approved</span>
+            )}
+
+            {isApproved && isDeclined && (
+              <span className="text-red-700">Declined</span>
+            )}
+            {!isApproved && <span className="text-yellow-700">Pending</span>}
+          </div>
+        );
+      },
+    },
+    {
       field: "Preview",
       flex: 0.8,
       minWidth: 100,
@@ -100,6 +124,8 @@ const AllProducts = () => {
         price: "US$ " + item.discountPrice,
         Stock: item.stock,
         sold: item?.sold_out,
+        isApproved: item?.isApproved,
+        isDeclined: item?.isDeclined,
       });
     });
 
